@@ -30,11 +30,11 @@ def write_to_csv(data):
 def submit_form():
     if request.method == 'POST':
         try:
-        data = request.form.to_dict()
-        write_to_csv(data)
-        return redirect('thankyou.html')
+            data = request.form.to_dict()
+            write_to_csv(data)
+            return redirect('thankyou.html')
         except:
-            return 'did not save to DB'
+            return 'did not save to D   B'
     else:
         return 'something went wrong'
 #
